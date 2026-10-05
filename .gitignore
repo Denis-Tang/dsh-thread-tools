@@ -1,0 +1,11 @@
+# Dependencies (including the local junction)
+node_modules/
+
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# Logs and test output
+*.log
+coverage/

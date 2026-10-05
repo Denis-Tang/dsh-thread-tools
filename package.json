@@ -1,0 +1,16 @@
+{
+  "name": "dsh-thread-tools",
+  "version": "0.1.1",
+  "description": "Create, fork, message and inspect ordinary DeepSeek Harness conversations.",
+  "type": "module",
+  "main": "index.mjs",
+  "exports": { ".": "./index.mjs", "./desktop": "./desktop.mjs", "./package.json": "./package.json" },
+  "files": ["index.mjs", "desktop.mjs", "cordis.patch.yml", "README.md"],
+  "dsh": { "bundle": { "patch": "./cordis.patch.yml" } },
+  "peerDependencies": {
+    "@deepseek-ai/dsh-tools": "^0.1.0-rc.8 || ^0.2.0-rc.2",
+    "@deepseek-ai/dsh-llm": "^0.1.0-rc.8 || ^0.2.0-rc.2"
+  },
+  "scripts": { "test": "node --test test.mjs" },
+  "license": "MIT"
+}
